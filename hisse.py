@@ -14,7 +14,7 @@ logger.setLevel(logging.INFO)
 
 df = pd.read_excel('bist_wallet.xlsx', header = None)
 company_dict = dict(zip(df[0],df[1]))  # df[0] is the names of companies
-									   # df[1] is how much amount I own
+					# df[1] is how much amount I own
 total_try = 0
 
 for company in company_dict.keys():
