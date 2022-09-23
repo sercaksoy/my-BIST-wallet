@@ -36,6 +36,7 @@ def plot_figures(df):
 		df_temp = df[df.Company == comp]
 		axes[i].plot(df_temp.Date, df_temp.StockPrice)
 		axes[i].set_ylabel(comp)
+		axes[i].tick_params(axis='x', labelrotation=30, labelsize=6)
 		i += 1
 	plt.tight_layout()
 	plt.show()
